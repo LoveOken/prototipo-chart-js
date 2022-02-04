@@ -23,7 +23,7 @@
 2. Cada gráfico requiere de una etiqueta meta. La etiqueta meta permite cambiar el archivo excel siempre y cuando mantenga la estructura y las celdas de los archivos del prototipo.
 
 ```html
-<meta name="graf{i}-sheet-url" content="https://cdn.statically.io/gh/LoveOken/movilidad-src/main/spreadsheets/Tabla{i}.xlsx">
+<meta name="graf{i}-sheet-url" content="url/de/Tabla{i}.xlsx">
 ```
 
 La variable {i} corresponde a un número entre 1 y 7. Ej: graf1, graf2, etc.
