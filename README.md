@@ -59,9 +59,9 @@ El script identifica estos elementos a través de los ids independientemente de 
 
 ## Llamadas al servidor del archivo excel
 
-Todos los scripts leen el elemento meta que se encuentra en la página. Con este elemento, solamente obtienen la URL del archivo y realizan una sola llamada para mostrar el archivo.
+Todos los scripts leen el elemento meta que se encuentra en la página. Con este elemento, solamente obtienen la URL del archivo y realizan una sola llamada para mostrar el gráfico.
 
-Al hacer click en el botón de descarga de imagen, solo se lee los datos renderizados en el canvas, y se imprimen a un archivo .png.
+Al hacer click en el botón de descarga de imagen, solo se leen los datos renderizados en el canvas, y se imprimen a un archivo .png.
 
 Al hacer click en el botón de descarga del excel, se realiza una llamada a la URL descrita en el elemento meta. 
 
