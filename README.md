@@ -102,5 +102,6 @@ Tanto la pagina como para visualizar el gráfico en español, como en ingles, ut
 ```
 
 Esto indica al código a utilizar español, cualquier otro valor del atributo lang indicara al codigo a utilizar ingles. Esto incluye al valor "en".
+Lo único que no cambia es lo que está escrito dentro de los botones y los selectores. Eso se puede hacer simplemente cambiando el texto manualmente en la página en inglés.
 
 
