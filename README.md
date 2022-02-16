@@ -8,6 +8,15 @@
 + [Gráfico 6](https://loveoken.github.io/prototipo-chart-js/views/graph6.html)
 + [Gráfico 7](https://loveoken.github.io/prototipo-chart-js/views/graph7.html)
 
+**En ingles**
+
++ [Gráfico 1](https://loveoken.github.io/prototipo-chart-js/views/graph1en.html)
++ [Gráfico 2](https://loveoken.github.io/prototipo-chart-js/views/graph2en.html)
++ [Gráfico 3](https://loveoken.github.io/prototipo-chart-js/views/graph3en.html)
++ [Gráfico 4](https://loveoken.github.io/prototipo-chart-js/views/graph4en.html)
++ [Gráfico 5](https://loveoken.github.io/prototipo-chart-js/views/graph5en.html)
++ [Gráfico 6](https://loveoken.github.io/prototipo-chart-js/views/graph6en.html)
++ [Gráfico 7](https://loveoken.github.io/prototipo-chart-js/views/graph7en.html)
 
 ## Guia de uso
 
@@ -66,3 +75,32 @@ Al hacer click en el botón de descarga de imagen, solo se leen los datos render
 Al hacer click en el botón de descarga del excel, se realiza una llamada a la URL descrita en el elemento meta. 
 
 La unica vulnerabilidad que podría surgir de esto es que alguien repita la llamada del archivo a propósito y muy rapido (tipo DDOS), pero esto ya depende del servidor para anular este tipo de solicitudes.
+
+## Implementación de tipografía y escala adaptable (Responsive)
+
+Para hacer que se vea lo mejor posible en todos los dispositivos, programe el cambio de los tamaños tipográficos de acuerdo al ancho del contenedor del elemento canvas.
+Chart.js también se adapta a los tamaños automaticamente, pero debe cumplir un requisito:
+
+```html
+<div style="width: 600px;">
+    <canvas id="graf{i}-chart"></canvas>
+</div>
+```
+
+El elemento contenedor (parent) del canvas debe tener especificado su ancho. Ya sea en su propio archivo CSS o en el mismo elemento. Lo incorrecto seria especificar el ancho en el elemento canvas. Tal como se demuestra a continuacion:
+
+```html
+<canvas id="graf{i}-chart" style="width: 600px;"></canvas>
+```
+
+## Uso del inglés
+
+Tanto la pagina como para visualizar el gráfico en español, como en ingles, utilizan el mismo script. La unica diferencia entre estas páginas es que el elemento html debe indicar el lenguaje.
+    
+```html
+<html lang="es">
+```
+
+Esto indica al código a utilizar español, cualquier otro valor del atributo lang indicara al codigo a utilizar ingles. Esto incluye al valor "en".
+
+
