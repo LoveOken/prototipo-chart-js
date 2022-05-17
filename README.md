@@ -10,9 +10,10 @@
 
 ## Guia de uso
 
-1. Cada gráfico requiere de las extensiones Chart.js y XLSX.
+1. Cada gráfico requiere de las extensiones Chart.js y XLSX, y un elemento meta que indica la URL del archivo de traducción, un excel.
 
 ```html
+<meta name="data-traduccion" content="url/de/excel/de/traducción" >
 <!-- XLSX -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js" integrity="sha512-BMIFH0QGwPdinbGu7AraCzG9T4hKEkcsbbr+Uqv8IY3G5+JTzs7ycfGbz7Xh85ONQsnHYrxZSXgS1Pdo9r7B6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Chart.js -->
